@@ -1,7 +1,7 @@
 {
-  "name": "events",
+  "name": "h-events",
   "version": "1.0.0",
-  "description": "",
+  "description": "An application that allows the user to create events and/or attend events made by other users.",
   "main": "server.js",
   "dependencies": {
     "express": "^4.17.1",
@@ -18,7 +18,7 @@
     "url": "git+https://github.com/seiretsym/events.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "CBR",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/seiretsym/events/issues"

@@ -11,17 +11,21 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Routes
-require("./routes/apiRoutes.js")(app);
+//require("./routes/apiRoutes.js")(app);
 require("./routes/htmlRoutes.js")(app, path);
 
 // Requiring our models for syncing
 var db = require("./models");
 
 // Syncing our sequelize models and then starting our Express app
-db.sequelize.sync().then(function () {
-  var something
-  app.listen(PORT, function () {
-    console.log("App listening on PORT " + PORT);
+// db.sequelize.sync().then(function () {
+//   var something
+//   app.listen(PORT, function () {
+//     console.log("App listening on PORT " + PORT);
 
-  });
+//   });
+// });
+app.listen(PORT, function () {
+  console.log("App listening on PORT " + PORT);
+
 });
