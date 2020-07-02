@@ -12,10 +12,15 @@ app.use(express.json());
 
 // Routes
 //require("./routes/apiRoutes.js")(app);
-require("./routes/htmlRoutes.js")(app, path);
+//require("./routes/htmlRoutes.js")(app, path);//
 
+app.use(express.static('horrorstories/build'))
+
+app.get('*',function(req, res) {
+  res.sendFile(path.join(__dirname, "/horrorstories/build/index.html"));
+});
 // Requiring our models for syncing
-var db = require("./models");
+///var db = require("./models");//
 
 // Syncing our sequelize models and then starting our Express app
 // db.sequelize.sync().then(function () {

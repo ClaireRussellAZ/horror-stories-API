@@ -14,7 +14,7 @@ if (config.use_env_variable) {
 } else {
   sequelize = new Sequelize(config.database, config.username, config.password, config);
 }
-
+//Reading other files within this directory//
 fs
   .readdirSync(__dirname)
   .filter(function(file) {
