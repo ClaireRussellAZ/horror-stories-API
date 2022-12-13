@@ -4,7 +4,7 @@
   "description": "An application that allows the user to create events and/or attend events made by other users.",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "mysql2": "^2.1.0",
     "sequelize": "^4.43.0"
   },
